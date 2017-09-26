@@ -1,0 +1,19 @@
+<!doctype html>
+<html class="no-js" lang="{{$.Site.LanguageCode}}">
+{{ partial "head.html" . }}
+  <body style="background-image: url({{$.Site.Params.background}});">
+      <!--[if lte IE 9]>
+          <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+          <![endif]-->
+          <div id="container" class="centered">
+            <!-- Header section -->
+            {{ partial "header/header.html" . }}
+            <!-- Opt in section -->
+            {{ partial "opt-in/opt-in.html" . }}
+            <!-- Services section -->
+            {{ partial "services/services.html" . }}
+            <!-- Footer section -->
+            {{ partial "footer/footer.html" . }}
+          </div>
+  </body>
+</html>

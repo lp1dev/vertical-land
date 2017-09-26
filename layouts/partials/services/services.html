@@ -1,0 +1,8 @@
+<div id="services">
+	{{range $.Site.Data.services.services}}
+	<div class="service">
+		<img class="service-img" src="{{.img}}" alt="service1-illustration"/>
+		<h5>{{.title}}</h5>{{.description}}
+	</div>
+	{{end}}
+</div>
